@@ -3,36 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darshini-portfolio</title>
+    <title>Student learning portal</title>
 </head>
 <body>
-    <header>
-        <h1>Hi, I'm Darshini</h1>
-        <p>Passionate Computer Science Student</p>
+    <header><span>
+    <big><h1>Student learning portal</h1></big>
+    <p>welcome to my student website project</p></span>
     </header>
-
-
     <main>
-        <img src="/IMG_20260227_172714.jpg.jpeg" alt="It's me" width="150"><br>
- 
         <section>
-        <h3>Connect With Me</h3><pre>
-            <a href="https://github.com/darshinihlgowda"target="_main"><img src="https://cdn-icons-png.flaticon.com/256/25/25231.png"alt="Github" height="20">  <a href="https://www.linkedin.com/in/darshini-h-l-222621336/" target="_main"><img src="https://www.clipartmax.com/png/middle/267-2670965_linkedin-icon-logo-png-transparent-linked-in-circle-logo.png"alt="Linkedin" height="20"></a>  <a href="mailto:darshinihlgowda@gmail.com"><img src="https://thumbs.dreamstime.com/b/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C-201003176.jpg"alt="email" height="20"></a></pre>
-        </section><br>
+            <table border="1">
+                <tr>
+                    <th colspan="2"><h3>Empowering students through quality education</h3></th>
+                </tr>
+                <tr>
+                    <th>Course</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Used to create the structure of web pages</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Used to style and design the website</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>Used to add interactivity and dynamic behavior to wensites</td>
+                </tr>
+                <tr>
+                    <td>C programming</td>
+                    <td>A foundational programming language used for sustem programming</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>A beginner-friendly programming language used for web development,data science,AI etc</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>An extention of C used for object-oriented programming,game development etc</td>
+                </tr>
+                <tr>
+                    <td>Jave</td>
+                    <td>A versatile object-oriented programming language widely used for web application,mobile apps etc</td>
+                </tr>
+            </table>
+       
 
+            <h3>Choose your path. Start building</h3>
 
-        <article>
-            <h3>About Me</h3>
-            <p>Exploring my coding skills in web development and learning the process.</p>
-        </article>
+<select id="subjects" onchange="showLink()">
+    <option value="">Select Course</option>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="javascript">JavaScript</option>
+    <option value="c">C</option>
+    <option value="python">Python</option>
+    <option value="c++">C++</option>
+    <option value="java">Java</option>
+</select>
+
+<br><br>
+
+<div id="result"></div>
+
+<script>
+function showLink() {
+    var course = document.getElementById("subjects").value;
+    var resultDiv = document.getElementById("result");
+
+    if (course === "html") {
+        resultDiv.innerHTML =
+        "<h4>Click this link to build your website journey</h4>" +
+        "<a href='https://www.youtube.com/watch?v=HcOc7P5BMi4' target='_blank'>Start HTML Course</a>";
+    }
+    else if (course === "css") {
+        resultDiv.innerHTML =
+        "<h4>Click this link to learn CSS</h4>" +
+        "<a href='https://www.youtube.com/watch?v=ESnrn1kAD4E&t=10107s' target='_blank'>Start CSS Course</a>";
+    }
+    else if (course === "javascript") {
+        resultDiv.innerHTML =
+        "<h4>Click this link to learn JavaScript</h4>" +
+        "<a href='https://www.youtube.com/watch?v=ajdRvxDWH4w&list=PLGjplNEQ1it_oTvuLRNqXfz_v_0pq6unW' target='_blank'>Start JavaScript Course</a>";
+    }
+     else if (course === "c") {
+        resultDiv.innerHTML =
+        "<h4>Click this link to learn C programming</h4>" +
+        "<a href='https://www.youtube.com/watch?v=irqbmMNs2Bo' target='_blank'>Start C Course</a>";
+    }
+
+    else if (course === "c++") {
+        resultDiv.innerHTML =
+        "<h4>Click this link to learn C++ programming</h4>" +
+        "<a href='https://www.youtube.com/watch?v=_FFRRMEXdBU' target='_blank'>Start C++ Course</a>";
+    }
+
+    else if (course === "python") {
+        resultDiv.innerHTML =
+        "<h4>Click this link to learn Python programming</h4>" +
+        "<a href='https://www.youtube.com/watch?v=t2_Q2BRzeEE&list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0' target='_blank'>Start Python Course</a>";
+    }
+
+    else if (course === "java") {
+        resultDiv.innerHTML =
+        "<h4>Click this link to learn Java programming</h4>" +
+        "<a href='https://www.youtube.com/watch?v=yRpLlJmRo2w&list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop' target='_blank'>Start Java Course</a>";
+    }
+
+    else {
+        resultDiv.innerHTML = "";
+    }
+}
+</script>
+        </section>
     </main>
-
-    
-        <footer>
-           <p>© 2026 Darshini</p>
-        </footer>
-    
-    
-
 </body>
 </html>
