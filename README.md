@@ -1,6 +1,5 @@
 ## 🌐 Live Demo
-🔗
-https://darshinihlgowda.github.io/projects/
+🔗https://darshinihlgowda.github.io/projects/
 
 
 
